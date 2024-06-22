@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Show Pet</title>
+</head>
+<body>
+    <div>
+        <h1>{{ pet['pet_name'] }}</h1>
+        <div style="background-color: antiquewhite;">
+            <p>Did you know</p>
+            <p>{{ pet['pet_fact'] }}</p>
+        </div>
+        </div> 
+        <img src="{{ pet['pet_photo'] }}" alt="{{ pet['pet_name'] }}" width="400"><br>
+        <a href="/pets/">Back to All Pets</a>
+    </div>
+</body>
+</html>

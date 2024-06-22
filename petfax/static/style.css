@@ -1,0 +1,27 @@
+body {
+    background-color: ivory; 
+}
+
+div{
+    background-color: lightblue;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: lightgoldenrodyellow;
+    text-align: center;
+}
+p {
+    color: slategrey;
+    font-family: Helvetica;
+}
+img {
+    justify-content: center;
+}
+#petfax {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em;
+
+}
