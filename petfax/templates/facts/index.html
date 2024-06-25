@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <H1 id="facts">UserFax</H1>
+    <div class="callout">
+    {% for fact in facts %}
+    <div id="petfax">
+            <div style="border: 1px solid grey;">
+            <div>
+                <h2>Submitted by: {{ fact.submitter }}</h1>
+            </div>
+            <div>
+                <p>{{ fact.fact }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    <a href="/facts/new">Do you have another fact to submit</a><br>
+    <a href="/pets/">Back to All Pets</a>
+</div>
+</body>
+</html>
